@@ -1,0 +1,22 @@
+.form_tabel {
+  width: 90%;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tabel {
+  width: 100%;
+  text-align: center;
+
+  thead {
+    font-size: 20px;
+  }
+
+  tbody {
+    font-size: 17px;
+  }
+}

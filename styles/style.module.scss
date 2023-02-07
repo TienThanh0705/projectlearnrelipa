@@ -1,0 +1,29 @@
+
+.form {
+  width: 600px;
+  margin: auto;
+  margin-top: 100px;
+  align-items: center;
+  background-color: aquamarine;
+  border-radius: 10px;
+  padding-top:30px;
+  padding-bottom:30px;
+  padding-bottom: 10px;
+  background: url(../public/assets/image/nong.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.form_content {
+  margin-left: 40px;
+  .isError{
+    color:red;
+    margin-left: 100px;
+    margin-top:-18px
+   
+  }
+  .submit{
+    margin-right: 180px;
+  }
+}
+

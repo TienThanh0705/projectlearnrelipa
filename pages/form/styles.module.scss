@@ -1,0 +1,48 @@
+.form {
+  width: 450px;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  background-color: aquamarine;
+  border-radius: 10px;
+}
+.form_content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  .form_item {
+    width: 100% !important;
+  }
+  p {
+    color: red;
+    padding-left: 8px;
+    font-size: 18px;
+  }
+  .form_label_file {
+    padding: 0;
+    margin: 0;
+    color: #434343;
+  }
+  input {
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 18px;
+    color: #434343;
+  }
+
+  Select[label="Age"] {
+    margin-top: 20px;
+  }
+  input[type="submit"] {
+    background-color: rgb(26 120 210);
+    color: white;
+    height: 50px;
+  }
+  
+}

@@ -1,0 +1,172 @@
+.list_todos {
+  width: 550px;
+  margin: auto;
+
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 80px;
+    color: #f89f9f;
+    margin-top: 40px;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .input_add_todo {
+    width: 100%;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .icon_delete {
+      height: 33px;
+      font-size: 24px;
+      padding-right: 12px;
+      color: transparent;
+    }
+
+    .icon_down {
+      height: 30px;
+      font-size: 30px;
+      margin: 12px;
+    }
+
+    svg {
+      display: block;
+      margin: auto;
+      color: rgb(218, 216, 216);
+      font-size: 20px;
+    }
+
+    input {
+      border: none;
+      padding: 16px 16px 16px 0;
+      font-size: 24px;
+      width: 100%;
+      outline: none;
+
+      &::placeholder {
+        color: rgb(218, 216, 216);
+        font-style: italic;
+      }
+    }
+
+    input[type="text"] {
+      border: none;
+      padding: 16px 16px 16px 0;
+      font-size: 24px;
+      width: 100%;
+      outline: none;
+
+      &::placeholder {
+        color: rgb(218, 216, 216);
+        font-style: italic;
+      }
+    }
+
+    input[type="radio"] {
+      width: 26px;
+      height: 26px;
+      margin: 16px;
+    }
+
+    input[name="todo"] {
+      box-shadow: 0px 0px 4px rgb(0, 0, 0);
+      padding: 10px;
+      // margin: 3px;
+      margin-right: 150px;
+      width: 96%;
+    }
+
+    input[name="todo"]:disabled {
+      box-shadow: none;
+    }
+
+    .icon_check {
+      width: 30px;
+      margin: 10px 16px;
+      display: flex;
+      text-align: center;
+      height: 30px;
+      border-radius: 30px;
+      border: 1px solid #a6a6a6;
+
+      svg {
+        color: rgb(0, 228, 228);
+      }
+    }
+
+    &:hover .icon_delete {
+      color: rgb(197, 120, 120);
+    }
+  }
+
+  .list_controll {
+    padding: 8px 8px;
+    border: 1px solid #ccc;
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 98%;
+      height: 3px;
+      left: 1%;
+      bottom: -5px;
+      background: white;
+      border: 1px solid #ccc;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 96%;
+      height: 3px;
+      left: 2%;
+      bottom: -9px;
+      background: white;
+      border: 1px solid #ccc;
+    }
+  }
+
+  .list_content_controll {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+
+    li {
+      P {
+        padding: 4px 14px;
+      }
+    }
+
+    .size_controll.active {
+      border: 1px solid #ccc;
+      padding: 0px 6px;
+    }
+  }
+
+  .footer {
+    text-align: center;
+    padding-top: 80px;
+    display: block;
+
+    li {
+      font-size: 12px;
+      color: #a19f9f;
+      margin: 6px 0;
+    }
+  }
+}

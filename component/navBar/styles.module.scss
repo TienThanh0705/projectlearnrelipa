@@ -1,0 +1,39 @@
+.nav_bar {
+  width: 100%;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.61);
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 0px 4px rgb(148, 148, 148);
+  z-index: 999;
+}
+.content_nav_bar {
+  width: 90%;
+  min-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.nav_bar_menu {
+  display: flex;
+  align-items: center;
+  li {
+    margin: 0 12px;
+    a {
+      padding: 12px 20px;
+      font-weight: 500;
+      display: block;
+      &:hover {
+        color: rgb(255, 0, 0);
+      }
+    }
+  }
+}
+.nav_bar_menu_icon {
+  font-size: 28px;
+  color: rgb(48, 48, 48);
+  &:hover {
+    color: rgb(255, 0, 0);
+  }
+}

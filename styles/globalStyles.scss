@@ -1,0 +1,122 @@
+:root{
+  --primary: #fe2c55;
+  --black : #000;
+  --white : #fff;
+  --color-text: #333;
+
+  // Nav bar
+  --height-nav: 100px;
+
+  // Form
+  --BGR-form: #ffffff36;
+  --border: 6px;
+  --size-input: 18px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: system-ui;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  -moz-user-select: none !important;
+  -webkit-touch-callout: none!important;
+  -webkit-user-select: none!important;
+  -khtml-user-select: none!important;
+  -moz-user-select: none!important;
+  -ms-user-select: none!important;
+  user-select: none!important;
+}
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgb(173, 173, 173);
+}
+html *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0);
+}
+ul {
+  list-style: none;
+  margin: 0 !important;
+  padding: 0;
+}
+.size_controll {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6c6b6b;
+}
+.size_controll.active{
+  border: 1px solid #ccc;
+}
+.show {
+  height: auto !important;
+}
+.hide {
+  height: 0px !important;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+.content_todo {
+  flex: 1;
+  font-size: 26px;
+  opacity: .8;
+}
+.content_todo.not_active{
+  text-decoration: line-through;
+  opacity: .2;
+}
+.list_todos-content {
+  margin-top: -1px;
+  max-height: 550px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.list_todos-content.show {
+  height: auto !important;
+}
+.list_todos-content.hide {
+  height: 0px !important;
+  overflow: hidden;
+}
+.item_end {
+  margin-left: auto;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+.modal_form_loading {
+  position: fixed;
+  width: 99%;
+  height: 99vh;
+  background: transparent;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: all .4s linear;
+} 
+.modal_form_loading.active{
+  opacity: 1;
+  background: linear-gradient(180deg, white, #cefbff, white);
+  transition: all .4s linear;
+} 
+
